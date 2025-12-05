@@ -1,38 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arafath Ahmed’s Senior Portfolio</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arafath Ahmed's Senior Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing Arafath Ahmed's web design and development work">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
+<body class="home-page">
     <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">AA</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header class="header">
+        <nav class="container">
+            <div class="nav-flex">
+                <a href="index.html" class="logo">Arafath Ahmed</a>
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link active-nav">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="mobile-menu-button" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden" id="mobile-menu">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="resume.html" class="mobile-nav-link">Resume</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero fade-in">
-        <div class="hero-text">
-            <h1>Hello, I’m <span class="accent">Arafath Ahmed</span></h1>
-            <p class="subtitle">
-                A senior Web Design & Development student passionate about building 
-                clean, fast, and user-friendly websites.
-            </p>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Arafath Ahmed</h1>
+                    <h2>Web Designer & Developer</h2>
+                    <p>Creating beautiful, functional digital experiences with a focus on user-centered design and clean code.</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <img src="https://picsum.photos/400?random=1" alt="Arafath Ahmed" class="profile-image">
+                        <div class="experience-badge">
+                            <span>5+ Years</span> Experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="skills">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Expertise in HTML5, CSS3, JavaScript, and modern frameworks like React and Vue.js. Passionate about creating responsive, accessible interfaces.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Strong focus on user experience, wireframing, and prototyping. Proficient in Figma, Adobe XD, and user research methodologies.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Experience with Node.js, Express, MongoDB, and RESTful API design. Understanding of server architecture and database management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Highlights -->
+    <section class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Web Developer</h3>
+                            <span class="timeline-date">2020 - Present</span>
+                        </div>
+                        <p class="timeline-company">Tech Solutions Inc., San Francisco, CA</p>
+                        <ul class="timeline-description">
+                            <li>Lead developer responsible for architecting and implementing complex web applications</li>
+                            <li>Mentored junior developers and collaborated with cross-functional teams</li>
+                            <li>Improved application performance by 40% through code optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>UI/UX Designer</h3>
+                            <span class="timeline-date">2018 - 2020</span>
+                        </div>
+                        <p class="timeline-company">Creative Agency, San Francisco, CA</p>
+                        <ul class="timeline-description">
+                            <li>Designed intuitive user interfaces for various clients across industries</li>
+                            <li>Conducted user research and created wireframes, prototypes, and design systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Development Intern</h3>
+                            <span class="timeline-date">2017 - 2018</span>
+                        </div>
+                        <p class="timeline-company">Startup Ventures, San Francisco, CA</p>
+                        <ul class="timeline-description">
+                            <li>Assisted in building and maintaining websites</li>
+                            <li>Gained hands-on experience with frontend technologies and basic backend development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">Arafath Ahmed</a>
+                    <p class="footer-subtitle">Web Designer & Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="projects.html" class="footer-link">Projects</a>
+                    <a href="resume.html" class="footer-link">Resume</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 Arafath Ahmed. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
