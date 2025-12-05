@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Arafath Ahmed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">Arafath Ahmed</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <h1 class="fade-in">Contact Me</h1>
+        <p class="fade-in delay-1 contact-intro">
+            If you'd like to reach out about projects, collaborations, or questions,  
+            feel free to contact me using the form below.
+        </p>
+
+        <div class="contact-container fade-in delay-2">
+            <form action="#" method="POST" class="contact-form">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>My Info</h3>
+                <p><strong>Name:</strong> Arafath Ahmed</p>
+                <p><strong>Email:</strong> arafath@example.com</p>
+                <p><strong>Location:</strong> United States</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
