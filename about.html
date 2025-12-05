@@ -1,54 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base target="_self">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About – Arafath Ahmed</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About - Arafath Ahmed's Portfolio</title>
+    <meta name="description" content="Learn more about Arafath Ahmed, a web designer and developer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="about-page">
+    <!-- Navigation (same as index.html) -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-flex">
+                <a href="index.html" class="logo">Arafath Ahmed</a>
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active-nav">About</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="mobile-menu-button" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden" id="mobile-menu">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link active-nav">About</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="resume.html" class="mobile-nav-link">Resume</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2 class="logo">Arafath Ahmed</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- About Content -->
+    <main class="about-main">
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://picsum.photos/400?random=2" alt="Arafath Ahmed" class="profile-photo">
+                    </div>
+                    <div class="about-text">
+                        <h1 class="section-title">About Me</h1>
+                        <p>I'm a passionate web designer and developer with over 5 years of experience creating digital experiences that are both beautiful and functional. My journey in tech began when I built my first website at 16, and I've been hooked ever since.</p>
+                        <p>I specialize in frontend development with a strong focus on user experience. My approach combines technical expertise with design sensibility to create products that users love.</p>
+                        <p>When I'm not coding, you can find me exploring new design trends, contributing to open source projects, or mentoring aspiring developers in my community.</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Education:</span> BS in Computer Science
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span> San Francisco, CA
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Availability:</span> Open to opportunities
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about-section">
-        <div class="about-container">
-            <h1 class="fade-in">About Me</h1>
-            <p class="fade-in delay-1">
-                Hi, I’m <strong>Arafath Ahmed</strong>, a Web Design & Development student 
-                with a passion for building clean, responsive, and modern websites.
-            </p>
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">My Design & Development Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Discover</h3>
+                        <p class="step-description">Research and understand user needs, business goals, and technical constraints through interviews and data analysis.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">Design</h3>
+                        <p class="step-description">Create wireframes, prototypes, and design systems that balance aesthetics with functionality and usability.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Develop</h3>
+                        <p class="step-description">Build responsive, accessible, and performant web applications using modern technologies and best practices.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3 class="step-title">Deliver</h3>
+                        <p class="step-description">Test, optimize, and launch products while establishing metrics for continuous improvement and iteration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <p class="fade-in delay-2">
-                I specialize in front-end development, UI/UX styling, and creating smooth, 
-                interactive user experiences using HTML, CSS, and JavaScript. 
-            </p>
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-categories">
+                    <div class="skills-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check"></i> HTML5/CSS3</li>
+                            <li><i class="fas fa-check"></i> JavaScript/ES6+</li>
+                            <li><i class="fas fa-check"></i> React.js</li>
+                            <li><i class="fas fa-check"></i> Vue.js</li>
+                            <li><i class="fas fa-check"></i> Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skills-category">
+                        <h3 class="category-title">Backend</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check"></i> Node.js</li>
+                            <li><i class="fas fa-check"></i> Express</li>
+                            <li><i class="fas fa-check"></i> MongoDB</li>
+                            <li><i class="fas fa-check"></i> REST APIs</li>
+                            <li><i class="fas fa-check"></i> Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="skills-category">
+                        <h3 class="category-title">Design</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check"></i> Figma</li>
+                            <li><i class="fas fa-check"></i> Adobe XD</li>
+                            <li><i class="fas fa-check"></i> UI/UX Principles</li>
+                            <li><i class="fas fa-check"></i> Wireframing</li>
+                            <li><i class="fas fa-check"></i> Prototyping</li>
+                        </ul>
+                    </div>
+                    <div class="skills-category">
+                        <h3 class="category-title">Tools</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check"></i> Git/GitHub</li>
+                            <li><i class="fas fa-check"></i> VS Code</li>
+                            <li><i class="fas fa-check"></i> Webpack</li>
+                            <li><i class="fas fa-check"></i> Jest</li>
+                            <li><i class="fas fa-check"></i> Docker</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <p class="fade-in delay-3">
-                My goal is to continue improving my development skills and grow into a 
-                full-stack developer while designing sites that look great and perform even better.
-            </p>
-
-            <h2 class="fade-in delay-4">Skills</h2>
-            <ul class="skills-list fade-in delay-5">
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Responsive Design</li>
-                <li>UI/UX Principles</li>
-                <li>Animations & Interactivity</li>
-            </ul>
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">Arafath Ahmed</a>
+                    <p class="footer-subtitle">Web Designer & Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="projects.html" class="footer-link">Projects</a>
+                    <a href="resume.html" class="footer-link">Resume</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 Arafath Ahmed. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
         </div>
-    </section>
+    </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
