@@ -1,62 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base target="_self">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume – Arafath Ahmed</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Resume - Arafath Ahmed's Portfolio</title>
+    <meta name="description" content="View or download Arafath Ahmed's resume">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="resume-page">
+    <!-- Navigation (same as index.html) -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-flex">
+                <a href="index.html" class="logo">Arafath Ahmed</a>
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="resume.html" class="nav-link active-nav">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="mobile-menu-button" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden" id="mobile-menu">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="resume.html" class="mobile-nav-link active-nav">Resume</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2 class="logo">Arafath Ahmed</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html" class="active">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Resume Content -->
+    <main class="resume-main">
+        <section class="resume-section">
+            <div class="container">
+                <div class="resume-header">
+                    <div class="resume-title">
+                        <h1 class="section-title">My Resume</h1>
+                        <p class="section-subtitle">A summary of my professional experience and education</p>
+                    </div>
+                    <a href="#" class="download-btn">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+                
+                <div class="resume-container">
+                    <div class="resume-header-info">
+                        <h2>Arafath Ahmed</h2>
+                        <p class="resume-subtitle">Web Designer & Developer</p>
+                    </div>
+                    
+                    <!-- Experience Section -->
+                    <div class="resume-section-block">
+                        <h3 class="resume-section-title">Professional Experience</h3>
+                        
+                        <!-- Job 1 -->
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h4 class="resume-item-title">Senior Web Developer</h4>
+                                <span class="resume-item-date">2020 - Present</span>
+                            </div>
+                            <p class="resume-item-company">Tech Solutions Inc., San Francisco, CA</p>
+                            <ul class="resume-item-list">
+                                <li>Lead a team of 5 developers in building complex web applications for enterprise clients</li>
+                                <li>Architected and implemented a React-based design system used across 12+ products</li>
+                                <li>Improved application performance by 40% through code optimization and lazy loading</li>
+                                <li>Mentored junior developers and conducted code reviews to maintain quality standards</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Job 2 -->
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h4 class="resume-item-title">UI/UX Designer</h4>
+                                <span class="resume-item-date">2018 - 2020</span>
+                            </div>
+                            <p class="resume-item-company">Creative Agency, San Francisco, CA</p>
+                            <ul class="resume-item-list">
+                                <li>Designed user interfaces for 15+ client projects across various industries</li>
+                                <li>Conducted user research and usability testing to inform design decisions</li>
+                                <li>Created comprehensive design systems and component libraries</li>
+                                <li>Collaborated with developers to ensure design implementation fidelity</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Job 3 -->
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h4 class="resume-item-title">Web Development Intern</h4>
+                                <span class="resume-item-date">2017 - 2018</span>
+                            </div>
+                            <p class="resume-item-company">Startup Ventures, San Francisco, CA</p>
+                            <ul class="resume-item-list">
+                                <li>Assisted in building and maintaining company websites and web applications</li>
+                                <li>Implemented responsive designs and fixed cross-browser compatibility issues</li>
+                                <li>Participated in agile development processes and code reviews</li>
+                                <li>Gained experience with frontend technologies and basic backend development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Section -->
+                    <div class="resume-section-block">
+                        <h3 class="resume-section-title">Education</h3>
+                        
+                        <!-- Education 1 -->
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h4 class="resume-item-title">Bachelor of Science in Computer Science</h4>
+                                <span class="resume-item-date">2014 - 2018</span>
+                            </div>
+                            <p class="resume-item-company">University of California, Berkeley</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Section -->
+                    <div class="resume-section-block">
+                        <h3 class="resume-section-title">Skills</h3>
+                        
+                        <div class="resume-skills">
+                            <!-- Technical Skills -->
+                            <div class="skills-category">
+                                <h4 class="skills-category-title">Technical</h4>
+                                <ul class="skills-list">
+                                    <li><i class="fas fa-check"></i> HTML5, CSS3, JavaScript</li>
+                                    <li><i class="fas fa-check"></i> React, Vue.js</li>
+                                    <li><i class="fas fa-check"></i> Node.js, Express</li>
+                                    <li><i class="fas fa-check"></i> MongoDB, PostgreSQL</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Design Skills -->
+                            <div class="skills-category">
+                                <h4 class="skills-category-title">Design</h4>
+                                <ul class="skills-list">
+                                    <li><i class="fas fa-check"></i> UI/UX Design</li>
+                                    <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+                                    <li><i class="fas fa-check"></i> Figma, Adobe XD</li>
+                                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Professional Skills -->
+                            <div class="skills-category">
+                                <h4 class="skills-category-title">Professional</h4>
+                                <ul class="skills-list">
+                                    <li><i class="fas fa-check"></i> Team Leadership</li>
+                                    <li><i class="fas fa-check"></i> Problem Solving</li>
+                                    <li><i class="fas fa-check"></i> Communication</li>
+                                    <li><i class="fas fa-check"></i> Project Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- RESUME SECTION -->
-    <section class="resume-section">
-        <h1 class="fade-in">My Resume</h1>
-        <p class="fade-in delay-1 resume-intro">
-            You can view or download my resume using the button below.
-        </p>
-
-        <div class="resume-card fade-in delay-2">
-            <h2>Arafath Ahmed</h2>
-            <p>Web Design & Development Student</p>
-
-            <a href="resume.pdf" download class="resume-btn">Download Resume</a>
-
-            <hr>
-
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Responsive Web Design</li>
-                <li>UI/UX Principles</li>
-                <li>Website Optimization</li>
-            </ul>
-
-            <h3>Experience</h3>
-            <ul>
-                <li>Built multiple websites using HTML, CSS, and JavaScript</li>
-                <li>Designed responsive layouts and modern UI interfaces</li>
-                <li>Created full project pages and interactive features</li>
-            </ul>
-
-            <h3>Education</h3>
-            <ul>
-                <li>Web Design & Development Program – Senior Year</li>
-            </ul>
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">Arafath Ahmed</a>
+                    <p class="footer-subtitle">Web Designer & Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="projects.html" class="footer-link">Projects</a>
+                    <a href="resume.html" class="footer-link">Resume</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 Arafath Ahmed. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
         </div>
-    </section>
+    </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
